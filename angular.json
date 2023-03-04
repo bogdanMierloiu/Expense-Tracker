@@ -64,7 +64,8 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "expense-tracker-frontend:build:production"
+              "browserTarget": "expense-tracker-frontend:build:production",
+              "proxyConfig": "src/proxy.conf.json"
             },
             "development": {
               "browserTarget": "expense-tracker-frontend:build:development"
@@ -97,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "fc20831d-8515-4b80-9c8e-25ee1da4afa5"
   }
 }
